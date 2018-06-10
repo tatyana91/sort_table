@@ -1,0 +1,25 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__head {position: relative; padding: 5px;border: 1px solid #bebebe; font-weight: bold; text-align: center; cursor: pointer;}
+.table__data {padding: 5px;border: 1px solid #bebebe;}
+
+.table__head[data-sort_direction = asc]:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  border: 7px solid transparent;	
+  border-bottom: 7px solid #ccc;
+}
+
+.table__head[data-sort_direction = desc]:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  border: 7px solid transparent;	
+  border-top: 7px solid #ccc;
+}
